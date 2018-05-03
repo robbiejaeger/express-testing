@@ -1,6 +1,8 @@
 const express = require('express');
 const app = express();
 
+console.log(process.env);
+
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
@@ -24,3 +26,5 @@ app.get('/api/v1/penguins', (request, response) => {
 app.listen(app.get('port'), () => {
   console.log(`Testing app running on port ${app.get('port')}`);
 });
+
+module.exports = app;
