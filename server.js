@@ -22,5 +22,5 @@ app.get('/api/v1/penguins', (request, response) => {
 });
 
 app.listen(app.get('port'), () => {
-  console.log(`Travis test app running on port ${app.get('port')}`);
+  console.log(`Testing app running on port ${app.get('port')}`);
 });
