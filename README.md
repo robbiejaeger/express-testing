@@ -1,3 +1,3 @@
-# TravisCI Test Repository
+# Test Repository
 
-Test the viability of TravisCI for continuous integration in coursework.
+Set up some server-side testing!
